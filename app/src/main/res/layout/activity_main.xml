@@ -6,10 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/browse_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Browse"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="21dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/file_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14sp"
+        android:text="File Name"
+        app:layout_constraintStart_toEndOf="@+id/browse_btn"
+        app:layout_constraintTop_toTopOf="@id/browse_btn"/>
+
+    <TextView
+        android:id="@+id/file_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
